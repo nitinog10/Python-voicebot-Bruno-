@@ -78,7 +78,7 @@ if __name__ == "__main__":
             query = query.replace("sources", "")
             try:
                 results = wikipedia.summary(query, sentences=2)
-                speak("According to sources")
+                speak("According to sources", "from the sources", "Define the", "What is the", "how will you define")
                 print(results)
                 speak(results)
             except wikipedia.exceptions.DisambiguationError as e:
