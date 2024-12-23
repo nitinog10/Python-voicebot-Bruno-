@@ -63,7 +63,7 @@ if __name__ == "__main__":
             query = query.replace("sources", "")
             try:
                 results = wikipedia.summary(query, sentences=2)
-                respond("According to sources:")
+                respond("According to sources:", "from the sources", "Define the", "What is the", "how will you define")
                 respond(results)
             except wikipedia.exceptions.DisambiguationError as e:
                 respond("There are multiple results for your query. Please be more specific.")
